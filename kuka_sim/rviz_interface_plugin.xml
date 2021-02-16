@@ -1,0 +1,9 @@
+ <library path="lib/librviz_kuka_sim">
+  <class name="kuka_sim/KukaInterface"
+         type="KukaInterfacePanel::KukaInterface"
+         base_class_type="rviz::Panel">
+    <description>
+      A panel widget for simulating Kuka Robots.
+    </description>
+  </class>
+</library>
