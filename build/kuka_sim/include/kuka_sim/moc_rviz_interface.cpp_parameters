@@ -1,0 +1,17 @@
+-I/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/devel/include
+-I/home/jaineeldesai509/Desktop/CAM/Emulator/src/kuka_sim/include
+-I/opt/ros/melodic/include
+-I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp
+-I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include
+-I/usr/include
+-I/usr/include/eigen3
+-I/usr/include/OGRE/Overlay
+-I/usr/include/OGRE
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_PACKAGE_NAME="kuka_sim"
+-DROSCONSOLE_BACKEND_LOG4CXX
+-DQT_NO_KEYWORDS
+-o
+/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/kuka_sim/include/kuka_sim/moc_rviz_interface.cpp
+/home/jaineeldesai509/Desktop/CAM/Emulator/src/kuka_sim/include/kuka_sim/rviz_interface.h

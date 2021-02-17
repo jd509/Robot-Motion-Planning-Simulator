@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/jaineeldesai509/Desktop/CAM/Emulator/devel/include/**",
+                "/opt/ros/melodic/include/**",
+                "/home/jaineeldesai509/Desktop/CAM/Emulator/src/iiwa_stack/iiwa_hw/include/**",
+                "/home/jaineeldesai509/Desktop/CAM/Emulator/src/iiwa_stack/iiwa_ros/include/**",
+                "/home/jaineeldesai509/Desktop/CAM/Emulator/src/kuka_sim/include/**",
+                "/home/jaineeldesai509/Desktop/CAM/Emulator/src/visualize_robot_plans/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}

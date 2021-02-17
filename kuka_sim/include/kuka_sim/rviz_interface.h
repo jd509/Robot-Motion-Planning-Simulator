@@ -40,6 +40,8 @@ namespace KukaInterfacePanel
             void addToolBox();
             void addOtherUtils();
 
+            void load_trajcsv_clicked();
+
         protected:
             //class variables
             QVBoxLayout* main_layout_;

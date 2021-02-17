@@ -1,0 +1,7 @@
+string mesh_path
+string frame_id
+geometry_msgs/Pose mesh_pose
+
+---
+
+string response

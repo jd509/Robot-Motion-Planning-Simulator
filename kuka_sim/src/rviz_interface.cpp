@@ -38,8 +38,8 @@
 #include <iostream>
 #include <iomanip>
 #include <fstream>
+#include <boost/filesystem.hpp>
 #include <kuka_sim/rviz_interface.h>
-
 
 namespace KukaInterfacePanel
 {
@@ -79,6 +79,9 @@ namespace KukaInterfacePanel
 
         //Setting the layout
         setLayout(main_layout_);
+
+        //Button connections
+        connect(load_trajcsv_, SIGNAL(clicked()), this, SLOT(load_trajcsv_clicked()));
     }
 
     void KukaInterface::addTitleBar(std::string title)
@@ -97,6 +100,9 @@ namespace KukaInterfacePanel
         QHBoxLayout* upperSection = new QHBoxLayout;
         QLabel* optionLabel = new QLabel;
         traj_type_sel_ = new QComboBox;
+        QStringList traj_space_options = {"Joint Space", "Cartesian Space"};
+        traj_type_sel_->addItems(traj_space_options);
+
         optionLabel->setText("Select Configuration Space:");
         upperSection->addWidget(optionLabel);
         upperSection->addWidget(traj_type_sel_);
@@ -118,8 +124,10 @@ namespace KukaInterfacePanel
     {
         QVBoxLayout* sceneObj_box = new QVBoxLayout;
         QHBoxLayout* sceneObj_btns = new QHBoxLayout;
-        sceneObj_manager_ = new QTableWidget;
-        
+        sceneObj_manager_ = new QTableWidget(10,2);
+        QStringList labels = {"Object File Name", "Position w.r.t. Robot"};
+        sceneObj_manager_->setHorizontalHeaderLabels(labels);
+
         add_sceneObj_ = new QPushButton;
         del_sceneObj_ = new QPushButton;
         add_sceneObj_->setText("Add Scene Object");
@@ -161,6 +169,28 @@ namespace KukaInterfacePanel
         otherUtils->addWidget(exec_mtn_);
         otherUtils->addLayout(sceneState);
         main_layout_->addLayout(otherUtils);
+    }
+
+    void KukaInterface::load_trajcsv_clicked()
+    {
+        std::string file = "";
+        std::string path = "/home";
+        QString Qfile;
+        try
+        {
+            Qfile = QFileDialog::getOpenFileName(this, "Load Trajectory File", path.c_str(), tr("CSV Files (*.csv), TXT files (*.txt)"));
+            file = Qfile.toUtf8().constData();
+
+        }
+        catch(const std::exception& e)
+        {
+            status_window_->setText("Could not open file.");
+        }
+        std::string base_filename = (boost::filesystem::path(file).filename()).c_str();
+        std::string status = "You have loaded " + base_filename;
+        status_window_->setText(QString::fromStdString(status));
+        trajfileName_->setStyleSheet("QLabel {background-color: lightGreen}");
+        trajfileName_->setText(QString::fromStdString(base_filename));
     }
 
     void KukaInterface::save( rviz::Config config ) const

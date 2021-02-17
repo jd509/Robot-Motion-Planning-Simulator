@@ -1,0 +1,92 @@
+[
+{
+  "directory": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /usr/src/googletest/googlemock/src/gmock_main.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock_main.cc"
+},
+{
+  "directory": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/gtest/googlemock/gtest",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_main_EXPORTS -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /usr/src/googletest/googletest/src/gtest_main.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest_main.cc"
+},
+{
+  "directory": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/gtest/googlemock/gtest",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_EXPORTS -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/iiwa_stack/iiwa_ros",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"iiwa_ros\\\" -Diiwa_ros_EXPORTS -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/iiwa_stack/iiwa_ros/include -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -std=c++11  -g -fPIC   -o CMakeFiles/iiwa_ros.dir/src/iiwa_ros.cpp.o -c /home/jaineeldesai509/Desktop/CAM/Emulator/src/iiwa_stack/iiwa_ros/src/iiwa_ros.cpp",
+  "file": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/iiwa_stack/iiwa_ros/src/iiwa_ros.cpp"
+},
+{
+  "directory": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/iiwa_stack/iiwa_ros",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"iiwa_ros\\\" -Diiwa_ros_EXPORTS -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/iiwa_stack/iiwa_ros/include -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -std=c++11  -g -fPIC   -o CMakeFiles/iiwa_ros.dir/src/smart_servo_service.cpp.o -c /home/jaineeldesai509/Desktop/CAM/Emulator/src/iiwa_stack/iiwa_ros/src/smart_servo_service.cpp",
+  "file": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/iiwa_stack/iiwa_ros/src/smart_servo_service.cpp"
+},
+{
+  "directory": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/iiwa_stack/iiwa_ros",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"iiwa_ros\\\" -Diiwa_ros_EXPORTS -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/iiwa_stack/iiwa_ros/include -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -std=c++11  -g -fPIC   -o CMakeFiles/iiwa_ros.dir/src/path_parameters_service.cpp.o -c /home/jaineeldesai509/Desktop/CAM/Emulator/src/iiwa_stack/iiwa_ros/src/path_parameters_service.cpp",
+  "file": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/iiwa_stack/iiwa_ros/src/path_parameters_service.cpp"
+},
+{
+  "directory": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/iiwa_stack/iiwa_ros",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"iiwa_ros\\\" -Diiwa_ros_EXPORTS -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/iiwa_stack/iiwa_ros/include -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -std=c++11  -g -fPIC   -o CMakeFiles/iiwa_ros.dir/src/time_to_destination_service.cpp.o -c /home/jaineeldesai509/Desktop/CAM/Emulator/src/iiwa_stack/iiwa_ros/src/time_to_destination_service.cpp",
+  "file": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/iiwa_stack/iiwa_ros/src/time_to_destination_service.cpp"
+},
+{
+  "directory": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/iiwa_stack/iiwa_hw",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"iiwa_hw\\\" -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/iiwa_stack/iiwa_hw/include -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/devel/include -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/iiwa_stack/iiwa_ros/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -std=c++11  -g   -o CMakeFiles/iiwa_hw-bin.dir/src/main.cpp.o -c /home/jaineeldesai509/Desktop/CAM/Emulator/src/iiwa_stack/iiwa_hw/src/main.cpp",
+  "file": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/iiwa_stack/iiwa_hw/src/main.cpp"
+},
+{
+  "directory": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/iiwa_stack/iiwa_hw",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"iiwa_hw\\\" -Diiwa_hw_EXPORTS -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/iiwa_stack/iiwa_hw/include -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/devel/include -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/iiwa_stack/iiwa_ros/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -std=c++11  -g -fPIC   -o CMakeFiles/iiwa_hw.dir/src/iiwa_hw.cpp.o -c /home/jaineeldesai509/Desktop/CAM/Emulator/src/iiwa_stack/iiwa_hw/src/iiwa_hw.cpp",
+  "file": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/iiwa_stack/iiwa_hw/src/iiwa_hw.cpp"
+},
+{
+  "directory": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/kuka_sim",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_KEYWORDS -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"kuka_sim\\\" -Drviz_kuka_sim_EXPORTS -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/kuka_sim/rviz_kuka_sim_autogen/include -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/devel/include -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/kuka_sim/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3 -I/usr/include/OGRE/Overlay -I/usr/include/OGRE -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++  -g -fPIC   -fPIC -std=gnu++11 -o CMakeFiles/rviz_kuka_sim.dir/src/rviz_interface.cpp.o -c /home/jaineeldesai509/Desktop/CAM/Emulator/src/kuka_sim/src/rviz_interface.cpp",
+  "file": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/kuka_sim/src/rviz_interface.cpp"
+},
+{
+  "directory": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/kuka_sim",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_KEYWORDS -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"kuka_sim\\\" -Drviz_kuka_sim_EXPORTS -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/kuka_sim/rviz_kuka_sim_autogen/include -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/devel/include -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/kuka_sim/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3 -I/usr/include/OGRE/Overlay -I/usr/include/OGRE -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++  -g -fPIC   -fPIC -std=gnu++11 -o CMakeFiles/rviz_kuka_sim.dir/include/kuka_sim/moc_rviz_interface.cpp.o -c /home/jaineeldesai509/Desktop/CAM/Emulator/src/build/kuka_sim/include/kuka_sim/moc_rviz_interface.cpp",
+  "file": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/kuka_sim/include/kuka_sim/moc_rviz_interface.cpp"
+},
+{
+  "directory": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/kuka_sim",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_KEYWORDS -DQT_WIDGETS_LIB -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"kuka_sim\\\" -Drviz_kuka_sim_EXPORTS -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/kuka_sim/rviz_kuka_sim_autogen/include -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/devel/include -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/kuka_sim/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3 -I/usr/include/OGRE/Overlay -I/usr/include/OGRE -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++  -g -fPIC   -fPIC -std=gnu++11 -o CMakeFiles/rviz_kuka_sim.dir/rviz_kuka_sim_autogen/mocs_compilation.cpp.o -c /home/jaineeldesai509/Desktop/CAM/Emulator/src/build/kuka_sim/rviz_kuka_sim_autogen/mocs_compilation.cpp",
+  "file": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/kuka_sim/rviz_kuka_sim_autogen/mocs_compilation.cpp"
+},
+{
+  "directory": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/kuka_sim",
+  "command": "/usr/bin/c++  -DQT_NO_KEYWORDS -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"kuka_sim\\\" -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/kuka_sim/sceneObjectManager_autogen/include -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/devel/include -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/kuka_sim/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3 -I/usr/include/OGRE/Overlay -I/usr/include/OGRE  -g   -o CMakeFiles/sceneObjectManager.dir/src/sceneObject_manager.cpp.o -c /home/jaineeldesai509/Desktop/CAM/Emulator/src/kuka_sim/src/sceneObject_manager.cpp",
+  "file": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/kuka_sim/src/sceneObject_manager.cpp"
+},
+{
+  "directory": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/kuka_sim",
+  "command": "/usr/bin/c++  -DQT_NO_KEYWORDS -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"kuka_sim\\\" -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/kuka_sim/sceneObjectManager_autogen/include -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/devel/include -I/home/jaineeldesai509/Desktop/CAM/Emulator/src/kuka_sim/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3 -I/usr/include/OGRE/Overlay -I/usr/include/OGRE  -g   -o CMakeFiles/sceneObjectManager.dir/sceneObjectManager_autogen/mocs_compilation.cpp.o -c /home/jaineeldesai509/Desktop/CAM/Emulator/src/build/kuka_sim/sceneObjectManager_autogen/mocs_compilation.cpp",
+  "file": "/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/kuka_sim/sceneObjectManager_autogen/mocs_compilation.cpp"
+}
+]

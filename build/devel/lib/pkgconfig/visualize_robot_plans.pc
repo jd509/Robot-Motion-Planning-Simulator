@@ -1,0 +1,8 @@
+prefix=/home/jaineeldesai509/Desktop/CAM/Emulator/src/build/devel
+
+Name: visualize_robot_plans
+Description: Description of visualize_robot_plans
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

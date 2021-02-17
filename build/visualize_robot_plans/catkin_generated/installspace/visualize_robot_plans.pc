@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: visualize_robot_plans
+Description: Description of visualize_robot_plans
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
