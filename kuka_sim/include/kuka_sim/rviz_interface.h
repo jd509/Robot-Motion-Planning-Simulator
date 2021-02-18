@@ -2,11 +2,13 @@
 #define PLUGIN_CLASS
 
 #include<vector>
+#include<kuka_sim/utilities.hpp>
 
 #ifndef Q_MOC_RUN
 #include<ros/ros.h>
 #include<rviz/panel.h>
 #endif
+
 
 class QTextEdit;
 class QLineEdit;
@@ -41,6 +43,7 @@ namespace KukaInterfacePanel
             void addOtherUtils();
 
             void load_trajcsv_clicked();
+            void update_scene_obj_clicked();
 
         protected:
             //class variables
@@ -48,7 +51,6 @@ namespace KukaInterfacePanel
             QTextEdit* status_window_;
             QLineEdit* sceneObj_T_rob_;
             QComboBox* traj_type_sel_;
-            QPushButton* add_sceneObj_;
             QPushButton* del_sceneObj_;
             QPushButton* updte_sceneObj_;
             QPushButton* load_trajcsv_;
@@ -63,6 +65,8 @@ namespace KukaInterfacePanel
             QTableWidget* sceneObj_manager_;
 
             ros::NodeHandle nh_;
+            ros::ServiceClient sceneObj_client_;
+            Eigen::MatrixXd trajectory_;
     };
 }
 

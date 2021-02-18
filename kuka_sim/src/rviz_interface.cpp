@@ -3,6 +3,7 @@
  * ****************************************/
 #include <ros/ros.h>
 #include <ros/package.h>
+#include <geometry_msgs/Pose.h>
 
 /******************************************
  * Qt Headers
@@ -40,6 +41,7 @@
 #include <fstream>
 #include <boost/filesystem.hpp>
 #include <kuka_sim/rviz_interface.h>
+#include <kuka_sim/SceneObjSrv.h>
 
 namespace KukaInterfacePanel
 {
@@ -82,6 +84,10 @@ namespace KukaInterfacePanel
 
         //Button connections
         connect(load_trajcsv_, SIGNAL(clicked()), this, SLOT(load_trajcsv_clicked()));
+        connect(updte_sceneObj_, SIGNAL(clicked()), this, SLOT(update_scene_obj_clicked()));
+
+        //ROS
+        sceneObj_client_ = nh_.serviceClient<kuka_sim::SceneObjSrv>("/publish_scene_object");
     }
 
     void KukaInterface::addTitleBar(std::string title)
@@ -128,11 +134,11 @@ namespace KukaInterfacePanel
         QStringList labels = {"Object File Name", "Position w.r.t. Robot"};
         sceneObj_manager_->setHorizontalHeaderLabels(labels);
 
-        add_sceneObj_ = new QPushButton;
+        updte_sceneObj_ = new QPushButton;
         del_sceneObj_ = new QPushButton;
-        add_sceneObj_->setText("Add Scene Object");
+        updte_sceneObj_->setText("Update Scene Objects");
         del_sceneObj_->setText("Delete Scene Object");
-        sceneObj_btns->addWidget(add_sceneObj_);
+        sceneObj_btns->addWidget(updte_sceneObj_);
         sceneObj_btns->addWidget(del_sceneObj_);
 
         sceneObj_box->addWidget(sceneObj_manager_);
@@ -178,7 +184,7 @@ namespace KukaInterfacePanel
         QString Qfile;
         try
         {
-            Qfile = QFileDialog::getOpenFileName(this, "Load Trajectory File", path.c_str(), tr("CSV Files (*.csv), TXT files (*.txt)"));
+            Qfile = QFileDialog::getOpenFileName(this, "Load Trajectory File", path.c_str(), tr("CSV Files (*.csv)"));
             file = Qfile.toUtf8().constData();
 
         }
@@ -191,6 +197,39 @@ namespace KukaInterfacePanel
         status_window_->setText(QString::fromStdString(status));
         trajfileName_->setStyleSheet("QLabel {background-color: lightGreen}");
         trajfileName_->setText(QString::fromStdString(base_filename));
+        trajectory_ = EmulatorUtils::readCSV(boost::filesystem::path(file).c_str());
+    }
+
+    void KukaInterface::update_scene_obj_clicked()
+    {
+        std::vector<std::string> sceneObjfilePaths;
+        std::vector<std::string> sceneObjPosesStr;
+        std::vector<geometry_msgs::Pose> sceneObjPoses;
+
+        int rows = sceneObj_manager_->rowCount();
+        int columns = sceneObj_manager_->columnCount();
+
+        for(int i = 0; i < rows; i++)
+        {
+            for(int j = 0; j < columns; j++)
+            {
+                QTableWidgetItem* cell_item(sceneObj_manager_->item(i,j));
+                if(cell_item)
+                {
+                    std::string tempData = sceneObj_manager_->item(i,j)->text().toStdString();
+                    if(j == 0)
+                        sceneObjfilePaths.push_back(tempData);
+                    else if(j == 1)
+                        sceneObjPosesStr.push_back(tempData);
+                    else
+                        status_window_->setText("Could not parse data.");
+                }
+                else
+                {
+                    continue;
+                }
+            }
+        }
     }
 
     void KukaInterface::save( rviz::Config config ) const
